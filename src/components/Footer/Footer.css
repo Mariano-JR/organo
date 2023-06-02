@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #6278F7;
+    color: #FFF;
+
+    padding: 64px;
+}
+
+.footer .social img {
+    padding: 0 24px;
+}
