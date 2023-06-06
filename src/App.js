@@ -3,6 +3,7 @@ import Banner from "./components/Banner";
 import Formulario from "./components/Formulario";
 import Time from "./components/Time";
 import Footer from "./components/Footer";
+import BtnHide from "./components/BtnHide";
 import { v4 as uuidv4 } from 'uuid';
 
 function App() {
@@ -74,6 +75,15 @@ function App() {
     }))
   }
 
+  const toHide = () => {
+    const form = document.querySelector(".formulario").classList
+
+    form.contains("hide") 
+      ? form.remove("hide")
+    
+      : form.add("hide")
+  }
+
   return (
     <div className="App">
       <Banner />
@@ -83,7 +93,11 @@ function App() {
         }
         times={times.map((time) => time.nome)}
         cadastrarTime={cadastrarTime}
+        toHide={toHide}
       />
+        <BtnHide
+          toHide={toHide}
+        />
 
       {times.map((time, index) => (
         <Time

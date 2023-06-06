@@ -16,4 +16,19 @@
 
 .botao:hover {
     color: #95FFD4;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botao:active {
+    background-color: #6278f79a;
 }

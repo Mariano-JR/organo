@@ -5,7 +5,8 @@ import ListaSuspensa from "../ListaSuspensa";
 import "./Formulario.css";
 import { v4 as uuidv4 } from "uuid";
 
-const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
+const Formulario = ({aoCadastrar, times, cadastrarTime, toHide}) => {
+
 
   const aoSalvar = (event) => {
     event.preventDefault()
